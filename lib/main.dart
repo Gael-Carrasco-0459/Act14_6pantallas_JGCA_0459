@@ -15,6 +15,15 @@ class SpideySaurusApp extends StatelessWidget {
       title: 'Spidey Saurus',
       theme: ThemeData(scaffoldBackgroundColor: Colors.black),
       home: const MainLayout(),
+      routes: {
+        '/inicio': (context) => const InicioPage(),
+        '/productos': (context) => const ProductosPage(),
+        '/conocenos': (context) => const ConocenosPage(),
+        '/juguetes': (context) => const JuguetesPage(),
+        '/estatuas': (context) => const EstatuasPage(),
+        '/promocionales': (context) => const PromocionalesPage(),
+        '/ropa': (context) => const RopaPage(),
+      }
     );
   }
 }
